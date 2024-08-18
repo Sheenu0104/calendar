@@ -1,0 +1,188 @@
+
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.error {
+  color: red;
+  margin: 10px 0;
+}
+.feedback-form {
+  margin-top: 20px;
+}
+
+.feedback-form h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.feedback-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.feedback-form input, 
+.feedback-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.feedback-form button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.feedback-form .message {
+  color: green;
+  margin-bottom: 10px;
+}
+/* Container for the entire app */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.calendar-events-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.calendar-section,
+.events-section {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.calendar-section {
+  background-color: #fff;
+}
+
+.events-section {
+  background-color: #f9f9f9;
+  width: 300px;
+}
+
+.feedback-container {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.feedback-form {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.feedback-form h2 {
+  margin-bottom: 15px;
+}
+
+.feedback-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.feedback-form button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.feedback-form .message {
+  color: green;
+  margin-bottom: 10px;
+}
+/* Modal styling */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.modal h2 {
+  margin-bottom: 15px;
+}
+
+.modal label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modal input, 
+.modal textarea, 
+.modal select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.modal .error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+/* Background overlay for modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.3);
+  z-index: 999;
+}

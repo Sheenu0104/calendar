@@ -1,0 +1,174 @@
+/* General styles for the calendar app */
+.app-container {
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for theme change */
+  }
+  
+  .calendar-events-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .calendar-section, .events-section {
+    margin: 0 20px;
+  }
+  
+  /* Add Event Button */
+  .add-event-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Theme Toggle Button */
+  .theme-toggle-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Feedback Form Container */
+  .feedback-container {
+    margin-top: 20px;
+  }
+  
+  /* Modal Styles */
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.3);
+    z-index: 999;
+  }
+  
+  /* Dark Theme Styles */
+  .app-container.dark {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .app-container.dark .modal {
+    background-color: #444;
+    border-color: #555;
+  }
+  
+  .app-container.dark .modal h2,
+  .app-container.dark .modal label,
+  .app-container.dark .modal button {
+    color: #fff; /* Ensure text is visible in modal */
+  }
+  
+  .app-container.dark .add-event-button,
+  .app-container.dark .theme-toggle-button {
+    background-color: #007bff;
+    color: #fff; /* Ensure button text is visible */
+  }
+  
+  .app-container.dark .error {
+    color: #f00; /* Error messages should stand out */
+  }
+  
+  .app-container.dark .events-section {
+    color: #fff; /* Ensure event section text is visible */
+    background-color: #444; /* Background color for event section */
+    border: 1px solid #555; /* Border color for event section */
+    padding: 10px;
+    border-radius: 8px; /* Add border-radius for rounded corners */
+  }
+  
+  .app-container.dark .events-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .app-container.dark .events-section ul li {
+    color: #fff; /* Ensure event list items are visible */
+    padding: 5px 0;
+  }
+  
+  /* Ensure headings and labels are visible in dark mode */
+  .app-container.dark .events-section h2 {
+    color: #fff; /* Heading text color */
+  }
+  
+  .app-container.dark .feedback-container h2 {
+    color: #fff; /* Heading text color in feedback form */
+  }
+  
+  .app-container.dark .feedback-container label {
+    color: #ddd; /* Label text color */
+  }
+  
+  /* Feedback form styling in dark mode */
+  .app-container.dark .feedback-container {
+    background-color: #444; /* Background color for feedback container */
+    color: #fff; /* Text color in feedback container */
+    border: 1px solid #555; /* Border color for feedback container */
+    padding: 10px;
+    border-radius: 8px; /* Add border-radius for rounded corners */
+  }
+  
+  .app-container.dark .feedback-container input,
+  .app-container.dark .feedback-container textarea,
+  .app-container.dark .feedback-container select {
+    background-color: #555;
+    color: #fff; /* Text color in form elements */
+    border: 1px solid #666;
+    border-radius: 4px;
+    padding: 8px;
+  }
+  
+  .app-container.dark a {
+    color: #1e90ff; /* Color for links */
+  }
+  
+  /* Adjust select dropdown and list item alignment */
+  .events-section select {
+    margin: 10px 0;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .events-section ul {
+    padding-left: 0;
+    list-style-position: inside;
+  }
+  
+  .events-section ul li {
+    cursor: pointer;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 5px;
+  }
+  
