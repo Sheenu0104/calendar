@@ -84,13 +84,13 @@
   .app-container.dark .modal h2,
   .app-container.dark .modal label,
   .app-container.dark .modal button {
-    color: #fff; /* Ensure text is visible in modal */
+    color: #000; /* Ensure text is visible in modal */
   }
   
   .app-container.dark .add-event-button,
   .app-container.dark .theme-toggle-button {
     background-color: #007bff;
-    color: #fff; /* Ensure button text is visible */
+    color: #000; /* Ensure button text is visible */
   }
   
   .app-container.dark .error {
@@ -125,13 +125,13 @@
   }
   
   .app-container.dark .feedback-container label {
-    color: #ddd; /* Label text color */
+    color: #000; /* Label text color */
   }
   
   /* Feedback form styling in dark mode */
   .app-container.dark .feedback-container {
     background-color: #444; /* Background color for feedback container */
-    color: #fff; /* Text color in feedback container */
+    color: #000; /* Text color in feedback container */
     border: 1px solid #555; /* Border color for feedback container */
     padding: 10px;
     border-radius: 8px; /* Add border-radius for rounded corners */
