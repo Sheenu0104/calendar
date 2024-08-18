@@ -84,7 +84,7 @@
   .app-container.dark .modal h2,
   .app-container.dark .modal label,
   .app-container.dark .modal button {
-    color: #000; /* Ensure text is visible in modal */
+    color: #fff; /* Ensure text is visible in modal */
   }
   
   .app-container.dark .add-event-button,
