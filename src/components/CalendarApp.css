@@ -141,7 +141,7 @@
   .app-container.dark .feedback-container textarea,
   .app-container.dark .feedback-container select {
     background-color: #555;
-    color: #fff; /* Text color in form elements */
+    color: #000; /* Text color in form elements */
     border: 1px solid #666;
     border-radius: 4px;
     padding: 8px;
