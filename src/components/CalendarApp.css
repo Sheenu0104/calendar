@@ -121,7 +121,7 @@
   }
   
   .app-container.dark .feedback-container h2 {
-    color: #fff; /* Heading text color in feedback form */
+    color: #000; /* Heading text color in feedback form */
   }
   
   .app-container.dark .feedback-container label {
